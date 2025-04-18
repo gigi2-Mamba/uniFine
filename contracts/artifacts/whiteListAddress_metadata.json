@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.6.4+commit.1dca32f3"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/mulSignature.sol": "whiteListAddress"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts-upgradeable/GSN/ContextUpgradeable.sol": {
+			"keccak256": "0xb583dd8f2749c0b20005e3c4337371629690ad0fc9c149fb5fa1a6e8626e8e4c",
+			"urls": [
+				"bzz-raw://d4a2c91c0abd8d0a3f76ed32d374723ba0746ffda38f81854990af1334c80343",
+				"dweb:/ipfs/QmQQE6tqQJzKMwJMt25shwPmZY9A7MUstuZ3FaAbvCvrbZ"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+			"keccak256": "0xb419e68addcb82ecda3ad3974b0d2db76435ce9b08435a04d5b119a0c5d45ea5",
+			"urls": [
+				"bzz-raw://a85355cc4f2554f4a8d334336d66b48d616abf1d90ec3d6b602e825c6fe63f0c",
+				"dweb:/ipfs/QmTJYtsKJjBy3ShAt4kEjvM6nfVS8ZAFQqE29fG16tUP8d"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/proxy/Initializable.sol": {
+			"keccak256": "0xd8e4eb08dcc1d1860fb347ba5ffd595242b9a1b66d49a47f2b4cb51c3f35017e",
+			"urls": [
+				"bzz-raw://7dbc89479d30592e82442edc38053b380f611037a5e6ceafc7bf57a7aa1f0305",
+				"dweb:/ipfs/QmcdYtt56WmjeYvsFjK69FnahnAriw88VzY3XRZwXkQKKN"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+			"keccak256": "0xfc5ea91fa9ceb1961023b2a6c978b902888c52b90847ac7813fe3b79524165f6",
+			"urls": [
+				"bzz-raw://a6b81dcc816857a9d981386f6d8de49198420ee41cdc0ecade366ab412174d03",
+				"dweb:/ipfs/QmV2vznMT6m9qo3pFMAWi3Nz3UDhwesgwFxeXe6Tod3v8A"
+			]
+		},
+		"@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+			"keccak256": "0xbbf8a21b9a66c48d45ff771b8563c6df19ba451d63dfb8380a865c1e1f29d1a0",
+			"urls": [
+				"bzz-raw://062688aac76e27ab50157a9d645700cf92e3c0d51d3d860be1d2e1a0c04a87d0",
+				"dweb:/ipfs/QmfXxppWAiSTeH8YNn2EtMPDgzrLeJ5rjRq8knEbje88mX"
+			]
+		},
+		"contracts/mulSignature.sol": {
+			"keccak256": "0xd98fd77ad33aa40c07af9ebc2e64f9d9f7d04fe8ea260a4459d72f9d013ad773",
+			"urls": [
+				"bzz-raw://a5336361b70c0b8ba282440966ce6aadb74285bd2c9bf14360d4771d55296a50",
+				"dweb:/ipfs/QmU4oBm5LENtobmzJ28iKuqyuRjUNeP43jWf3tBuDf6AeC"
+			]
+		}
+	},
+	"version": 1
+}
