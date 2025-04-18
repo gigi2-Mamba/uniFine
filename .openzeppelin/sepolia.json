@@ -1,0 +1,753 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x92175625d548645fD53652f9577904b9c46998ca",
+    "txHash": "0x500af0a9b0a004d70b60f49eb4333009b4dbfab175f97b331fbcfd33449acfd0"
+  },
+  "proxies": [
+    {
+      "address": "0x091EcD3CDC9d1390a3AaaA842b9B9Ba4a4bdB91a",
+      "txHash": "0xf4bdfce7f927a1a7a757274ddbac60d76443c98211ae3a5a02205bcc0b937b40",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc480E58C432d155BF34e95071D0D24719D4B1319",
+      "txHash": "0x468097cdd327c9a106f5040f6ea118d8458a32bee6bebde5068349588cc5d2de",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2E94CA5E3E3ff9e14e1fE865c36B223e05245f84",
+      "txHash": "0x613f177a39507496aefe70d83df0cb30b00f7dcfe1b39b71a58deb49b83c26e8",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x05D050ed3E55e71F9476C9D60E54e9C3bD5728a3",
+      "txHash": "0x7e0ecc5bbf31c9449af85c755312a8e78a4a954fdbcb4bb563c18039cde6445c",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "f7ca08e2175cd9e0f697f5005af1c63a5159dbf2d8603d918a29e6115c4ae23a": {
+      "address": "0xB4311bbb1E9A1925e1F40A39Cf4DB3d42eF48aaB",
+      "txHash": "0x22b4d39411cbd28bd618b6abf277012600aa2745e8b1f65a365ba865599f12b2",
+      "layout": {
+        "solcVersion": "0.6.6",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:20"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:74"
+          },
+          {
+            "label": "signatureOwners",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:55"
+          },
+          {
+            "label": "threshold",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:56"
+          },
+          {
+            "label": "nonce",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:57"
+          },
+          {
+            "label": "validPeriod",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:58"
+          },
+          {
+            "label": "signatureMap",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_bytes32,t_struct(signatureInfo)648_storage)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:68"
+          },
+          {
+            "label": "sigDetailMap",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_address,t_array(t_struct(sigDetail)642_storage)dyn_storage)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:72"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(sigDetail)642_storage)dyn_storage": {
+            "label": "struct multiSignature.sigDetail[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_struct(sigDetail)642_storage)dyn_storage)": {
+            "label": "mapping(address => struct multiSignature.sigDetail[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(signatureInfo)648_storage)": {
+            "label": "mapping(bytes32 => struct multiSignature.signatureInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(sigDetail)642_storage": {
+            "label": "struct multiSignature.sigDetail",
+            "members": [
+              {
+                "label": "_nonce",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(signatureInfo)648_storage": {
+            "label": "struct multiSignature.signatureInfo",
+            "members": [
+              {
+                "label": "applicant",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "signatures",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "81426dcbefd32f697aae7f1c76912bc3bf87b53b3328d0ac977d442ac11164c1": {
+      "address": "0x71Be23A27deb530FaEDB7ce3Cea2373F42b301c5",
+      "txHash": "0x7849a256d8a57450b39a2703b62afb7087cd053a86ebd49cf9855815b3d8db0d",
+      "layout": {
+        "solcVersion": "0.6.6",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:20"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:74"
+          },
+          {
+            "label": "signatureOwners",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:55"
+          },
+          {
+            "label": "threshold",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:56"
+          },
+          {
+            "label": "nonce",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:57"
+          },
+          {
+            "label": "validPeriod",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:58"
+          },
+          {
+            "label": "sigCountMap",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_array(t_bytes32)dyn_storage)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:58"
+          },
+          {
+            "label": "signatureMap",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_bytes32,t_struct(signatureInfo)652_storage)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:68"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_bytes32)dyn_storage)": {
+            "label": "mapping(address => bytes32[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(signatureInfo)652_storage)": {
+            "label": "mapping(bytes32 => struct multiSignature.signatureInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(signatureInfo)652_storage": {
+            "label": "struct multiSignature.signatureInfo",
+            "members": [
+              {
+                "label": "applicant",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "signatures",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "status",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "expiry",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "nonce",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "46679f15723abed87e887258fecff58353376b47d5d8da01ed129eca43c2441f": {
+      "address": "0x173479f308B4eC3641F737f4bCff1f2c81e3b175",
+      "txHash": "0x7b42e2105cd570b311678c994092cc9a7ec72f994ebc1db32f71a0494672d5f6",
+      "layout": {
+        "solcVersion": "0.6.6",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:20"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:74"
+          },
+          {
+            "label": "signatureOwners",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:55"
+          },
+          {
+            "label": "threshold",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:56"
+          },
+          {
+            "label": "nonce",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:57"
+          },
+          {
+            "label": "validPeriod",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:58"
+          },
+          {
+            "label": "sigCountMap",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_array(t_bytes32)dyn_storage)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:58"
+          },
+          {
+            "label": "signatureMap",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_bytes32,t_struct(signatureInfo)652_storage)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:68"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_bytes32)dyn_storage)": {
+            "label": "mapping(address => bytes32[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(signatureInfo)652_storage)": {
+            "label": "mapping(bytes32 => struct multiSignature.signatureInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(signatureInfo)652_storage": {
+            "label": "struct multiSignature.signatureInfo",
+            "members": [
+              {
+                "label": "applicant",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "signatures",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "status",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "expiry",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "nonce",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "ce63ed5d9382682c1e61448c2a8e2a7a23fde5ffdbce59534b1d4a015f4230e7": {
+      "address": "0x259B505728cE67d87B75AE706E56E0ceC35d88f0",
+      "txHash": "0xc328061b2a972e2fcbc264b8ec32e248fd9e4df6d6173eb8f158d98f999ac25d",
+      "layout": {
+        "solcVersion": "0.6.6",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:20"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:74"
+          },
+          {
+            "label": "signatureOwners",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:13"
+          },
+          {
+            "label": "threshold",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:14"
+          },
+          {
+            "label": "nonce",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:15"
+          },
+          {
+            "label": "validPeriod",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:16"
+          },
+          {
+            "label": "sigCountMap",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_array(t_bytes32)dyn_storage)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:17"
+          },
+          {
+            "label": "applicants",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:18"
+          },
+          {
+            "label": "signatureMap",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_mapping(t_bytes32,t_struct(signatureInfo)689_storage)",
+            "contract": "multiSignature",
+            "src": "contracts/mulSignature.sol:28"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_bytes32)dyn_storage)": {
+            "label": "mapping(address => bytes32[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(signatureInfo)689_storage)": {
+            "label": "mapping(bytes32 => struct multiSignature.signatureInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(signatureInfo)689_storage": {
+            "label": "struct multiSignature.signatureInfo",
+            "members": [
+              {
+                "label": "applicant",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "signatures",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "status",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "expiry",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "nonce",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
